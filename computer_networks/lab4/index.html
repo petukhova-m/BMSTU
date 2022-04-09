@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        background: rgb(25, 150, 0);
+    }
+
+    li {
+        margin-top: 5%;
+        border-bottom: #ff0000 solid 5px;
+        border-top: #ff0000 solid 5px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        padding: 10px;
+        list-style-type: none;
+        border-radius: 4px;
+        background: rgb(244, 219, 255);
+    }
+
+    a {}
+
+    a:hover {
+        font-size: larger;
+    }
+</style>
+
+<body>
+    <ul>
+        {{range .Lenta}}
+        <li>
+            <a href="{{ .Link}}"> {{ .Title}}</a>
+            <p>{{ .Published}}</p>
+        </li>
+        {{end}}
+    </ul>
+</body>
+
+</html>

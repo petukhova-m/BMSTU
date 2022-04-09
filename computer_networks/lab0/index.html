@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {{range .Lenta}}
+        <li>
+            <a href="{{ .Link}}"> {{ .Title}}</a>
+            <p>{{ .Description}}</p>
+            <p>{{ .Published}}</p>
+        </li>
+        {{end}}
+    </ul>
+</body>
+</html>
