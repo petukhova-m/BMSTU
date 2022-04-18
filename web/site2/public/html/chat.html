@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="../css/chat.css" rel="stylesheet">
+	<title>CYBERVECHE</title>
+</head>
+<body>
+    <div id="search_friends">
+        <h2>Search for Friends</h2>
+        <input type="text" id = "search_in" placeholder="My friend is...">
+        <div id="Friends">
+        </div>
+    </div>
+    <div id = "settings_menu">
+        <h2 id="settings_menu_name"></h2>
+        <input id= "change_1"/>
+        <input id= "change_2"/>
+        <button id= "submit_change">Submit</button>
+        <input id= "change_name"/>
+        <button id= "submit_change_name">Submit</button>
+        <button id= "logout">Logout</button>
+    </div>
+        <div id="dialogues">
+            <div id = "chats">Chats</div>
+            <div id="palka"></div>
+            <div id="serchbar">
+                <input type="text" id = "search" placeholder="Find people or message..">
+                <div id="help">
+                    <svg width="59" height="32" viewBox="0 0 59 32" fill="none" xmlns="http://www.w3.org/2000/svg" id ="testtest" >
+                        <path id="help" d="M19.6667 12.3077H12.2917V4.92308H7.375V12.3077H0V17.2308H7.375V24.6154H12.2917V17.2308H19.6667V12.3077ZM44.25 14.7692C48.3308 14.7692 51.6004 11.4708 51.6004 7.38462C51.6004 3.29846 48.3308 0 44.25 0C43.4633 0 42.7012 0.123077 42.0129 0.344615C43.4142 2.33846 44.2254 4.75077 44.2254 7.38462C44.2254 10.0185 43.3896 12.4062 42.0129 14.4246C42.7012 14.6462 43.4633 14.7692 44.25 14.7692ZM31.9583 14.7692C36.0392 14.7692 39.3087 11.4708 39.3087 7.38462C39.3087 3.29846 36.0392 0 31.9583 0C27.8775 0 24.5833 3.29846 24.5833 7.38462C24.5833 11.4708 27.8775 14.7692 31.9583 14.7692ZM48.2325 20.0862C50.2729 21.8831 51.625 24.1723 51.625 27.0769V32H59V27.0769C59 23.2862 53.1738 20.9477 48.2325 20.0862ZM31.9583 19.6923C27.0417 19.6923 17.2083 22.1538 17.2083 27.0769V32H46.7083V27.0769C46.7083 22.1538 36.875 19.6923 31.9583 19.6923Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div id ="friends_list">
+                
+            </div>
+            </div> 
+        </div>
+        <div id="main">
+            <div id= "logged_as">
+                <p id = "logged_as_1">
+
+                </p>
+                <span id="menu_1"><svg width="25" height="19" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 21.6C0 20.2745 1.07452 19.2 2.4 19.2H31.6C32.9255 19.2 34 20.2745 34 21.6C34 22.9255 32.9255 24 31.6 24H2.4C1.07452 24 0 22.9255 0 21.6Z" fill="white"/>
+                    <path d="M0 12C0 10.6745 1.07452 9.6 2.4 9.6H31.6C32.9255 9.6 34 10.6745 34 12C34 13.3255 32.9255 14.4 31.6 14.4H2.4C1.07452 14.4 0 13.3255 0 12Z" fill="white"/>
+                    <path d="M0 2.4C0 1.07452 1.07452 0 2.4 0H31.6C32.9255 0 34 1.07452 34 2.4C34 3.72548 32.9255 4.8 31.6 4.8H2.4C1.07452 4.8 0 3.72548 0 2.4Z" fill="white"/>
+                    </svg></span>
+                    
+            </div>
+           
+            <div id = "chat">
+                <div id = "collocutor">
+                    <ul>
+                        <li>Name</li>
+                        <li>Last seen: data</li>
+                    </ul>
+                    
+                </div>
+                <div id="textarea">
+                        
+                </div>
+            </div>
+            <div id = "write">
+                <input type = "text" id = "text" placeholder="Write a message...">
+                <div id = "send_message">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="30" height="30"
+                        viewBox="0 0 172 172"
+                        style=" fill:#000000;"><g transform="translate(4.988,4.988) scale(0.942,0.942)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g stroke="#cccccc" stroke-width="10" stroke-linejoin="round"><path d="M8.256,61.1159l155.9911,-53.363l-53.363,155.9911z" fill="#ffffff"></path><path d="M160.7942,11.2058l-148.5779,50.8303l97.7476,97.7476l50.8303,-148.5779M167.7,4.3l-55.9,163.4l-107.5,-107.5z" fill="#788b9c"></path><path d="M45.15,126.85v-26.8363l92.0157,-65.1794l-65.1794,92.0157z" fill="#e1ebf2"></path><path d="M128.1314,43.8686l-80.8314,57.2545v23.5769h23.5769l57.2545,-80.8314M146.2,25.8l-73.1,103.2h-30.1v-30.1z" fill="#788b9c"></path><g fill="#cedbe3"><path d="M47.3,124.7v-23.5769l80.8314,-57.2588z"></path></g></g><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M8.256,61.1159l155.9911,-53.363l-53.363,155.9911z" fill="#ffffff"></path><path d="M160.7942,11.2058l-50.8303,148.5779l-97.7476,-97.7476l148.5779,-50.8303M167.7,4.3l-163.4,55.9l107.5,107.5l55.9,-163.4z" fill="#788b9c"></path><path d="M45.15,126.85v-26.8363l92.0157,-65.1794l-65.1794,92.0157z" fill="#e1ebf2"></path><path d="M128.1314,43.8686l-57.2545,80.8314h-23.5769v-23.5769l80.8314,-57.2545M146.2,25.8l-103.2,73.1v30.1h30.1l73.1,-103.2z" fill="#788b9c"></path><g fill="#cedbe3"><path d="M47.3,124.7v-23.5769l80.8314,-57.2588z"></path></g></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
+            </div>
+          </div>
+        </div>
+        <script type="module" src="../js/chat.js"></script>
+</body>
+</html>
